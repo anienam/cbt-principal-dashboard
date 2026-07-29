@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
 
-    <link rel="stylesheet" href="./css/overview.css" />
+    <link rel="stylesheet" href="./css/data-analysis.css" />
   </head>
 
   <body>
@@ -138,11 +138,11 @@ TOPBAR
         <header class="topbar">
           <div class="topbar-left">
             <div class="topbar-title">
-              <h1>Dashboard</h1>
+              <h1>Data Analysis</h1>
 
               <p>
-                School-wide overview of students, teachers, classes, and exam
-                activity.
+                School-wide performance analytics across exams, subjects,
+                classes, and teachers.
               </p>
             </div>
           </div>
@@ -161,35 +161,61 @@ TOPBAR
         </header>
 
         <!-- ==========================================
-SESSION INFO
-========================================== -->
-
-        <div class="session-banner">
-          <span>
-            Current Session:
-
-            <strong>2025/2026</strong>
-          </span>
-
-          <span>
-            Current Term:
-
-            <strong>2nd Term</strong>
-          </span>
-        </div>
-
-        <!-- ==========================================
-SUMMARY CARDS
+SUMMARY
 ========================================== -->
 
         <section class="stats-grid" id="statsGrid"></section>
 
         <!-- ==========================================
-PENDING QUESTIONS
+AVERAGE SCORE
+========================================== -->
+
+        <section class="chart-card">
+          <h2 class="section-title">Average Score by Class (%)</h2>
+
+          <div class="bar-chart" id="classChart"></div>
+        </section>
+
+        <!-- ==========================================
+PERFORMANCE
 ========================================== -->
 
         <section>
-          <h2 class="section-title">Questions Awaiting Your Approval</h2>
+          <h2 class="section-title">Performance by Subject</h2>
+
+          <div class="filters">
+            <select id="classFilter">
+              <option>JSS 3B</option>
+            </select>
+
+            <select id="sessionFilter">
+              <option>Session 2026/2027</option>
+            </select>
+
+            <div class="term-tabs">
+              <button>1st Term</button>
+
+              <button class="active">2nd Term</button>
+
+              <button>3rd Term</button>
+            </div>
+          </div>
+
+          <div class="class-banner">
+            Class: <strong>JSS 3B</strong>
+
+            | Class Teacher:
+
+            <strong>Mr. Obi Chidubem</strong>
+
+            |
+
+            <strong>35 Students</strong>
+
+            |
+
+            <strong>2nd Term</strong>
+          </div>
 
           <div class="table-wrapper">
             <table>
@@ -197,26 +223,26 @@ PENDING QUESTIONS
                 <tr>
                   <th>Subject</th>
 
-                  <th>Class</th>
+                  <th>Avg Score</th>
 
-                  <th>Teacher</th>
+                  <th>Pass Rate</th>
 
-                  <th>Questions</th>
+                  <th>Highest</th>
 
-                  <th>Submitted</th>
+                  <th>Lowest</th>
 
-                  <th>Action</th>
+                  <th>Trend</th>
                 </tr>
               </thead>
 
-              <tbody id="approvalTable"></tbody>
+              <tbody id="performanceTable"></tbody>
             </table>
           </div>
         </section>
       </main>
     </div>
 
-    <script src="./js/overview.js"></script>
+    <script src="./js/data-analysis.js"></script>
 
     <script>
       lucide.createIcons();
