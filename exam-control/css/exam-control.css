@@ -120,6 +120,12 @@ EXAM CARD
   font-weight: 600;
 
   cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .go-live {

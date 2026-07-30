@@ -129,9 +129,7 @@ function initializeViewButtons() {
       // Navigate to Question Details
       // ======================================
 
-      // Example:
-      // window.location.href =
-      // `question-details.html?id=15`;
+      window.location.href = "./review.html";
     });
   });
 }

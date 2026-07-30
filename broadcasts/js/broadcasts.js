@@ -107,16 +107,9 @@ NEW BROADCAST
 */
 
 document.getElementById("newBroadcastBtn").addEventListener("click", () => {
-  /*
+  window.location.href = "./new-broadcast.html";
 
-Later
-
-window.location.href =
-"new-broadcast.html";
-
-*/
-
-  alert("Open New Broadcast");
+  // alert("Open New Broadcast");
 });
 
 /*

@@ -224,14 +224,9 @@ document.addEventListener("click", (e) => {
 
   if (!btn) return;
 
-  /*
-Replace with navigation later
+  window.location.href = "./student-report.html";
 
-window.location.href =
-"student-report-details.html";
-*/
-
-  alert("Open Student Report");
+  // alert("Open Student Report");
 });
 
 /*
