@@ -19,9 +19,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="./css/overview.css" />
+    <link rel="stylesheet" href="./css/teachers.css" />
   </head>
 
   <body>
@@ -75,7 +75,7 @@
               <span>Student Reports</span>
             </a>
 
-            <a href="" class="nav-link notification-link">
+            <a href="" class="nav-link">
               <i data-lucide="book-check"></i>
 
               <span>Theory</span>
@@ -93,7 +93,7 @@
               <span>Students</span>
             </a>
 
-            <a href="" class="nav-link">
+            <a href="" class="nav-link active">
               <i data-lucide="graduation-cap"></i>
 
               <span>Teachers</span>
@@ -144,12 +144,9 @@ TOPBAR
         <header class="topbar">
           <div class="topbar-left">
             <div class="topbar-title">
-              <h1>Dashboard</h1>
+              <h1>Teachers</h1>
 
-              <p>
-                School-wide overview of students, teachers, classes, and exam
-                activity.
-              </p>
+              <p>Manage all teaching staff, grouped by department.</p>
             </div>
           </div>
 
@@ -167,106 +164,35 @@ TOPBAR
         </header>
 
         <!-- ==========================================
-SESSION INFO
+SEARCH + ACTION
 ========================================== -->
 
-        <div class="session-banner">
-          <span>
-            Current Session:
+        <section class="teachers-toolbar">
+          <div class="search-box">
+            <i data-lucide="search"></i>
 
-            <strong>2025/2026</strong>
-          </span>
-
-          <span>
-            Current Term:
-
-            <strong>2nd Term</strong>
-          </span>
-        </div>
-
-        <!-- ==========================================
-SUMMARY CARDS
-========================================== -->
-
-        <section class="stats-grid" id="statsGrid"></section>
-
-        <!-- ==========================================
-PENDING QUESTIONS
-========================================== -->
-
-        <section>
-          <h2 class="section-title">Questions Awaiting Your Approval</h2>
-
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Subject</th>
-
-                  <th>Class</th>
-
-                  <th>Teacher</th>
-
-                  <th>Questions</th>
-
-                  <th>Submitted</th>
-
-                  <th>Action</th>
-                </tr>
-              </thead>
-
-              <tbody id="approvalTable"></tbody>
-            </table>
+            <input
+              type="text"
+              placeholder="Search by teacher name or staff ID..."
+            />
           </div>
+
+          <button id="addTeacherBtn" class="primary-btn">
+            <i data-lucide="plus"></i>
+
+            Add New Teacher
+          </button>
         </section>
+
+        <!-- ==========================================
+DEPARTMENT ACCORDIONS
+========================================== -->
+
+        <section id="teachersAccordion"></section>
       </main>
     </div>
 
-    <!-- ==========================================
-NEW ACCESS CODE MODAL
-========================================== -->
-
-    <div class="modal-overlay" id="credentialModal">
-      <div class="credential-modal">
-        <div class="success-icon">
-          <div class="icon-circle">
-            <i data-lucide="check"></i>
-          </div>
-        </div>
-
-        <h2>New access code generated</h2>
-
-        <p class="modal-description">
-          Share this new code with
-          <span id="teacherName"> Bello Tunde Ibrahim </span>
-          or their parent/guardian. The old code no longer works.
-        </p>
-
-        <div class="access-code-card">
-          <small>New Access Code</small>
-
-          <h1 id="generatedCode">JS/52/2026</h1>
-
-          <button class="mini-copy-btn" id="miniCopyBtn">
-            <i data-lucide="copy"></i>
-
-            Copy Code
-          </button>
-        </div>
-
-        <button class="copy-btn" id="copyCodeBtn">Copy Code</button>
-
-        <button class="close-btn" id="closeCredentialModal">Close</button>
-
-        <button class="share-btn" id="shareCodeBtn">
-          <i data-lucide="share-2"></i>
-
-          Share Code
-        </button>
-      </div>
-    </div>
-
-    <script src="./js/overview.js"></script>
+    <script src="./js/teachers.js"></script>
 
     <script>
       lucide.createIcons();

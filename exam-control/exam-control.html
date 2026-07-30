@@ -19,9 +19,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="./css/overview.css" />
+    <link rel="stylesheet" href="./css/exam-control.css" />
   </head>
 
   <body>
@@ -45,7 +45,7 @@
           <!-- Navigation -->
 
           <nav>
-            <a href="./overview.html" class="nav-link active">
+            <a href="./overview.html" class="nav-link">
               <i data-lucide="layout-dashboard"></i>
 
               <span>Overview</span>
@@ -57,7 +57,7 @@
               <span>Data Analysis</span>
             </a>
 
-            <a href="" class="nav-link">
+            <a href="" class="nav-link active">
               <i data-lucide="book-check"></i>
 
               <span>Exam Control</span>
@@ -85,12 +85,6 @@
               <i data-lucide="megaphone"></i>
 
               <span>Broadcasts</span>
-            </a>
-
-            <a href="" class="nav-link">
-              <i data-lucide="person-standing"></i>
-
-              <span>Students</span>
             </a>
 
             <a href="" class="nav-link">
@@ -144,11 +138,11 @@ TOPBAR
         <header class="topbar">
           <div class="topbar-left">
             <div class="topbar-title">
-              <h1>Dashboard</h1>
+              <h1>Exam Control</h1>
 
               <p>
-                School-wide overview of students, teachers, classes, and exam
-                activity.
+                Push approved exams live, schedule them for later, or stop exams
+                in progress.
               </p>
             </div>
           </div>
@@ -167,106 +161,124 @@ TOPBAR
         </header>
 
         <!-- ==========================================
-SESSION INFO
+ACCORDIONS
 ========================================== -->
 
-        <div class="session-banner">
-          <span>
-            Current Session:
+        <section id="examAccordion"></section>
 
-            <strong>2025/2026</strong>
-          </span>
+        <!-- ==========================================
+GO LIVE MODAL
+========================================== -->
 
-          <span>
-            Current Term:
+        <div class="modal-overlay" id="goLiveModal">
+          <div class="modal">
+            <div class="modal-icon warning">
+              <i data-lucide="play"></i>
+            </div>
 
-            <strong>2nd Term</strong>
-          </span>
+            <h2>Push this exam live?</h2>
+
+            <p>
+              Students in JSS 1A will immediately be able to access and begin
+              writing the Biology exam. This action cannot be undone once
+              students start submitting answers.
+            </p>
+
+            <div class="modal-summary">
+              <div>
+                <span>Subject</span>
+
+                <strong>Biology</strong>
+              </div>
+
+              <div>
+                <span>Class</span>
+
+                <strong>JSS 1A (30 students)</strong>
+              </div>
+
+              <div>
+                <span>Duration</span>
+
+                <strong>45 Minutes</strong>
+              </div>
+
+              <div>
+                <span>Questions</span>
+
+                <strong>40</strong>
+              </div>
+            </div>
+
+            <button class="modal-primary" id="confirmGoLive">
+              <i data-lucide="play"></i>
+
+              Yes, Go Live Now
+            </button>
+
+            <button class="modal-secondary" id="closeGoLive">Cancel</button>
+          </div>
         </div>
 
         <!-- ==========================================
-SUMMARY CARDS
+STOP EXAM MODAL
 ========================================== -->
 
-        <section class="stats-grid" id="statsGrid"></section>
+        <div class="modal-overlay" id="stopExamModal">
+          <div class="modal">
+            <div class="modal-icon danger">
+              <i data-lucide="square"></i>
+            </div>
 
-        <!-- ==========================================
-PENDING QUESTIONS
-========================================== -->
+            <h2>Stop this exam now?</h2>
 
-        <section>
-          <h2 class="section-title">Questions Awaiting Your Approval</h2>
+            <p>
+              Students currently writing this exam will be logged out and their
+              answers automatically submitted. Students who haven't started yet
+              will lose access. This cannot be undone.
+            </p>
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Subject</th>
+            <div class="modal-summary">
+              <div>
+                <span>Subject</span>
 
-                  <th>Class</th>
+                <strong>Mathematics</strong>
+              </div>
 
-                  <th>Teacher</th>
+              <div>
+                <span>Class</span>
 
-                  <th>Questions</th>
+                <strong>JSS 2A</strong>
+              </div>
 
-                  <th>Submitted</th>
+              <div>
+                <span>Time Remaining</span>
 
-                  <th>Action</th>
-                </tr>
-              </thead>
+                <strong>18 Minutes</strong>
+              </div>
 
-              <tbody id="approvalTable"></tbody>
-            </table>
+              <div>
+                <span>Students In Progress</span>
+
+                <strong style="color: #dc2626"> 28 of 33 </strong>
+              </div>
+            </div>
+
+            <button class="modal-danger" id="confirmStopExam">
+              <i data-lucide="square"></i>
+
+              Yes, Stop Exam Now
+            </button>
+
+            <button class="modal-secondary" id="closeStopExam">
+              Cancel, Keep Exam Running
+            </button>
           </div>
-        </section>
+        </div>
       </main>
     </div>
 
-    <!-- ==========================================
-NEW ACCESS CODE MODAL
-========================================== -->
-
-    <div class="modal-overlay" id="credentialModal">
-      <div class="credential-modal">
-        <div class="success-icon">
-          <div class="icon-circle">
-            <i data-lucide="check"></i>
-          </div>
-        </div>
-
-        <h2>New access code generated</h2>
-
-        <p class="modal-description">
-          Share this new code with
-          <span id="teacherName"> Bello Tunde Ibrahim </span>
-          or their parent/guardian. The old code no longer works.
-        </p>
-
-        <div class="access-code-card">
-          <small>New Access Code</small>
-
-          <h1 id="generatedCode">JS/52/2026</h1>
-
-          <button class="mini-copy-btn" id="miniCopyBtn">
-            <i data-lucide="copy"></i>
-
-            Copy Code
-          </button>
-        </div>
-
-        <button class="copy-btn" id="copyCodeBtn">Copy Code</button>
-
-        <button class="close-btn" id="closeCredentialModal">Close</button>
-
-        <button class="share-btn" id="shareCodeBtn">
-          <i data-lucide="share-2"></i>
-
-          Share Code
-        </button>
-      </div>
-    </div>
-
-    <script src="./js/overview.js"></script>
+    <script src="./js/exam-control.js"></script>
 
     <script>
       lucide.createIcons();

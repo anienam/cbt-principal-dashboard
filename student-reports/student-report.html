@@ -19,9 +19,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="./css/overview.css" />
+    <link rel="stylesheet" href="./css/student-report.css" />
   </head>
 
   <body>
@@ -45,7 +45,7 @@
           <!-- Navigation -->
 
           <nav>
-            <a href="./overview.html" class="nav-link active">
+            <a href="./overview.html" class="nav-link">
               <i data-lucide="layout-dashboard"></i>
 
               <span>Overview</span>
@@ -69,7 +69,7 @@
               <span>Student Scores</span>
             </a>
 
-            <a href="" class="nav-link">
+            <a href="" class="nav-link active">
               <i data-lucide="clipboard-check"></i>
 
               <span>Student Reports</span>
@@ -85,12 +85,6 @@
               <i data-lucide="megaphone"></i>
 
               <span>Broadcasts</span>
-            </a>
-
-            <a href="" class="nav-link">
-              <i data-lucide="person-standing"></i>
-
-              <span>Students</span>
             </a>
 
             <a href="" class="nav-link">
@@ -137,19 +131,16 @@
       <!-- For the main content of the page -->
 
       <main class="main-content">
-        <!-- ==========================================
+        <!-- ===========================
 TOPBAR
-========================================== -->
+=========================== -->
 
         <header class="topbar">
           <div class="topbar-left">
             <div class="topbar-title">
-              <h1>Dashboard</h1>
+              <h1>Adegbola Abiodun Odunyemi – Full Report</h1>
 
-              <p>
-                School-wide overview of students, teachers, classes, and exam
-                activity.
-              </p>
+              <p>JSS 3B • Access Number JS/50/2024</p>
             </div>
           </div>
 
@@ -166,107 +157,63 @@ TOPBAR
           </div>
         </header>
 
-        <!-- ==========================================
-SESSION INFO
-========================================== -->
+        <!-- ===========================
+BACK BUTTON
+=========================== -->
 
-        <div class="session-banner">
-          <span>
-            Current Session:
+        <div class="back-row">
+          <a href="../student-reports/student-reports.html" class="back-btn">
+            <i data-lucide="arrow-left"></i>
+          </a>
 
-            <strong>2025/2026</strong>
-          </span>
-
-          <span>
-            Current Term:
-
-            <strong>2nd Term</strong>
-          </span>
+          <span>Back to Student Reports</span>
         </div>
 
-        <!-- ==========================================
-SUMMARY CARDS
-========================================== -->
+        <!-- ===========================
+SUMMARY
+=========================== -->
 
-        <section class="stats-grid" id="statsGrid"></section>
+        <section class="summary-card">
+          <div class="summary-item">
+            <small>Overall Average</small>
 
-        <!-- ==========================================
-PENDING QUESTIONS
-========================================== -->
+            <h3>82%</h3>
+          </div>
 
-        <section>
-          <h2 class="section-title">Questions Awaiting Your Approval</h2>
+          <div class="summary-item">
+            <small>Class Position</small>
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Subject</th>
+            <h3>3rd of 35</h3>
+          </div>
 
-                  <th>Class</th>
+          <div class="summary-item">
+            <small>Attendance</small>
 
-                  <th>Teacher</th>
+            <h3>96%</h3>
+          </div>
 
-                  <th>Questions</th>
+          <div class="summary-item">
+            <small>No. of Exams Taken</small>
 
-                  <th>Submitted</th>
+            <h3>8</h3>
+          </div>
 
-                  <th>Action</th>
-                </tr>
-              </thead>
+          <div class="summary-item">
+            <small>Conduct</small>
 
-              <tbody id="approvalTable"></tbody>
-            </table>
+            <h3>Excellent</h3>
           </div>
         </section>
+
+        <!-- ===========================
+REPORTS
+=========================== -->
+
+        <section id="reportAccordion"></section>
       </main>
     </div>
 
-    <!-- ==========================================
-NEW ACCESS CODE MODAL
-========================================== -->
-
-    <div class="modal-overlay" id="credentialModal">
-      <div class="credential-modal">
-        <div class="success-icon">
-          <div class="icon-circle">
-            <i data-lucide="check"></i>
-          </div>
-        </div>
-
-        <h2>New access code generated</h2>
-
-        <p class="modal-description">
-          Share this new code with
-          <span id="teacherName"> Bello Tunde Ibrahim </span>
-          or their parent/guardian. The old code no longer works.
-        </p>
-
-        <div class="access-code-card">
-          <small>New Access Code</small>
-
-          <h1 id="generatedCode">JS/52/2026</h1>
-
-          <button class="mini-copy-btn" id="miniCopyBtn">
-            <i data-lucide="copy"></i>
-
-            Copy Code
-          </button>
-        </div>
-
-        <button class="copy-btn" id="copyCodeBtn">Copy Code</button>
-
-        <button class="close-btn" id="closeCredentialModal">Close</button>
-
-        <button class="share-btn" id="shareCodeBtn">
-          <i data-lucide="share-2"></i>
-
-          Share Code
-        </button>
-      </div>
-    </div>
-
-    <script src="./js/overview.js"></script>
+    <script src="./js/student-report.js"></script>
 
     <script>
       lucide.createIcons();

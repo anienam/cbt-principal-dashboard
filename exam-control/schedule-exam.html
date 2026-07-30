@@ -19,9 +19,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="./css/overview.css" />
+    <link rel="stylesheet" href="./css/schedule-exam.css" />
   </head>
 
   <body>
@@ -45,7 +45,7 @@
           <!-- Navigation -->
 
           <nav>
-            <a href="./overview.html" class="nav-link active">
+            <a href="./overview.html" class="nav-link">
               <i data-lucide="layout-dashboard"></i>
 
               <span>Overview</span>
@@ -57,7 +57,7 @@
               <span>Data Analysis</span>
             </a>
 
-            <a href="" class="nav-link">
+            <a href="" class="nav-link active">
               <i data-lucide="book-check"></i>
 
               <span>Exam Control</span>
@@ -85,12 +85,6 @@
               <i data-lucide="megaphone"></i>
 
               <span>Broadcasts</span>
-            </a>
-
-            <a href="" class="nav-link">
-              <i data-lucide="person-standing"></i>
-
-              <span>Students</span>
             </a>
 
             <a href="" class="nav-link">
@@ -144,11 +138,11 @@ TOPBAR
         <header class="topbar">
           <div class="topbar-left">
             <div class="topbar-title">
-              <h1>Dashboard</h1>
+              <h1>Schedule Exam</h1>
 
               <p>
-                School-wide overview of students, teachers, classes, and exam
-                activity.
+                Set a future date and time for this exam to automatically go
+                live.
               </p>
             </div>
           </div>
@@ -167,106 +161,110 @@ TOPBAR
         </header>
 
         <!-- ==========================================
-SESSION INFO
+BACK BUTTON
 ========================================== -->
 
-        <div class="session-banner">
-          <span>
-            Current Session:
+        <a href="../exam-control/exam-control.html" class="back-btn">
+          <i data-lucide="arrow-left"></i>
 
-            <strong>2025/2026</strong>
-          </span>
-
-          <span>
-            Current Term:
-
-            <strong>2nd Term</strong>
-          </span>
-        </div>
+          Back to Exam Control
+        </a>
 
         <!-- ==========================================
-SUMMARY CARDS
+FORM
 ========================================== -->
 
-        <section class="stats-grid" id="statsGrid"></section>
+        <section class="schedule-card">
+          <h2>Select Exam to Schedule</h2>
 
-        <!-- ==========================================
-PENDING QUESTIONS
-========================================== -->
+          <p class="subtitle">
+            Only subjects with fully approved questions appear here. Each one is
+            shown once.
+          </p>
 
-        <section>
-          <h2 class="section-title">Questions Awaiting Your Approval</h2>
+          <div class="form-group">
+            <label>Subject</label>
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Subject</th>
+            <select id="subject">
+              <option>Select an approved subject...</option>
+            </select>
+          </div>
 
-                  <th>Class</th>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Class</label>
 
-                  <th>Teacher</th>
+              <select id="class">
+                <option>Select class...</option>
+              </select>
+            </div>
 
-                  <th>Questions</th>
+            <div class="form-group">
+              <label>Duration</label>
 
-                  <th>Submitted</th>
+              <select id="duration">
+                <option>Select duration...</option>
+              </select>
+            </div>
+          </div>
 
-                  <th>Action</th>
-                </tr>
-              </thead>
+          <div class="questions-card">
+            <div>
+              <small>Questions</small>
 
-              <tbody id="approvalTable"></tbody>
-            </table>
+              <h3 id="questionCount">45</h3>
+            </div>
+
+            <span class="pill"> Auto-filled </span>
+          </div>
+
+          <h2 class="quick-title">Quick Schedule</h2>
+
+          <div class="quick-buttons">
+            <button class="active">In 1 Hour</button>
+
+            <button>In 3 Hours</button>
+
+            <button>In 6 Hours</button>
+
+            <button>Tomorrow, 8:00 AM</button>
+          </div>
+
+          <h2 class="custom-title">Or Choose a Custom Date & Time</h2>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Date</label>
+
+              <input type="date" id="examDate" />
+            </div>
+
+            <div class="form-group">
+              <label>Time</label>
+
+              <input type="time" id="examTime" />
+            </div>
+          </div>
+
+          <div class="info-box">
+            The exam will automatically go live at the selected time and stop
+            itself once the selected duration ends.
+          </div>
+
+          <div class="action-buttons">
+            <button class="primary-btn" id="confirmSchedule">
+              <i data-lucide="clock-3"></i>
+
+              Confirm Schedule
+            </button>
+
+            <button class="secondary-btn">Cancel</button>
           </div>
         </section>
       </main>
     </div>
 
-    <!-- ==========================================
-NEW ACCESS CODE MODAL
-========================================== -->
-
-    <div class="modal-overlay" id="credentialModal">
-      <div class="credential-modal">
-        <div class="success-icon">
-          <div class="icon-circle">
-            <i data-lucide="check"></i>
-          </div>
-        </div>
-
-        <h2>New access code generated</h2>
-
-        <p class="modal-description">
-          Share this new code with
-          <span id="teacherName"> Bello Tunde Ibrahim </span>
-          or their parent/guardian. The old code no longer works.
-        </p>
-
-        <div class="access-code-card">
-          <small>New Access Code</small>
-
-          <h1 id="generatedCode">JS/52/2026</h1>
-
-          <button class="mini-copy-btn" id="miniCopyBtn">
-            <i data-lucide="copy"></i>
-
-            Copy Code
-          </button>
-        </div>
-
-        <button class="copy-btn" id="copyCodeBtn">Copy Code</button>
-
-        <button class="close-btn" id="closeCredentialModal">Close</button>
-
-        <button class="share-btn" id="shareCodeBtn">
-          <i data-lucide="share-2"></i>
-
-          Share Code
-        </button>
-      </div>
-    </div>
-
-    <script src="./js/overview.js"></script>
+    <script src="./js/schedule-exam.js"></script>
 
     <script>
       lucide.createIcons();
