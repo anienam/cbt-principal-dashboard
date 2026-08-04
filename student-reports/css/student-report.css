@@ -28,7 +28,7 @@ BACK BUTTON
 }
 
 .back-row span {
-  font-size: 1.35rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -55,7 +55,7 @@ SUMMARY CARD
 
 .summary-item small {
   color: #777;
-  font-size: 0.95rem;
+  font-size: 0.813rem;
 }
 
 .summary-item h3 {
@@ -63,7 +63,7 @@ SUMMARY CARD
 
   color: var(--primary);
 
-  font-size: 2rem;
+  font-size: 1.063rem;
 
   font-weight: 700;
 }
@@ -92,6 +92,8 @@ TERM CARD
   cursor: pointer;
 
   transition: 0.3s;
+
+  border: 1px solid #dfdfdf;
 }
 
 .term-header.active {
@@ -109,7 +111,7 @@ TERM CARD
 }
 
 .term-title h2 {
-  font-size: 1.5rem;
+  font-size: 1.063rem;
 
   font-weight: 700;
 }
@@ -247,4 +249,11 @@ RESPONSIVE
   .back-row {
     flex-wrap: wrap;
   }
+}
+
+/* container */
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 32px 40px;
 }

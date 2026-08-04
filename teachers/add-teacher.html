@@ -173,251 +173,253 @@
             </div>
           </div>
 
-          <!-- ==========================================
+          <div class="main-container">
+            <!-- ==========================================
         BACK BUTTON
     =========================================== -->
 
-          <div class="back-navigation">
-            <a href="teachers.html" class="back-button">
-              <i data-lucide="arrow-left"></i>
-            </a>
+            <div class="back-navigation">
+              <a href="teachers.html" class="back-button">
+                <i data-lucide="arrow-left"></i>
+              </a>
 
-            <span>Back to Teachers</span>
-          </div>
+              <span>Back to Teachers</span>
+            </div>
 
-          <!-- ==========================================
+            <!-- ==========================================
         FORM
     =========================================== -->
 
-          <form id="teacherForm">
-            <!-- PERSONAL INFORMATION -->
+            <form id="teacherForm">
+              <!-- PERSONAL INFORMATION -->
 
-            <section class="card form-card">
-              <h2 class="form-title">Personal Information</h2>
+              <section class="card form-card">
+                <h2 class="form-title">Personal Information</h2>
 
-              <div class="form-grid three-columns">
-                <div class="form-group">
-                  <label>Surname</label>
-
-                  <input
-                    type="text"
-                    id="surname"
-                    placeholder="e.g Adebayo"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>First Name</label>
-
-                  <input
-                    type="text"
-                    id="firstname"
-                    placeholder="e.g Folake"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Other Names</label>
-
-                  <input type="text" placeholder="e.g Mojisola" />
-                </div>
-              </div>
-
-              <div class="form-grid two-columns">
-                <div class="form-group">
-                  <label>Phone Number</label>
-
-                  <input
-                    type="tel"
-                    id="phone"
-                    placeholder="e.g +2348023456789"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Email Address</label>
-
-                  <input
-                    type="email"
-                    id="email"
-                    placeholder="e.g folake.adebayo@mobayo.edu"
-                  />
-                </div>
-              </div>
-
-              <div class="form-grid two-columns">
-                <div class="form-group">
-                  <label>Qualification</label>
-
-                  <input
-                    type="text"
-                    placeholder="e.g B.Sc Biology Education (Hons), NCE"
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label>Date Employed</label>
-
-                  <input type="date" />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label>Home Address</label>
-
-                <textarea
-                  rows="3"
-                  placeholder="e.g 12, Adeola Crescent, Abeokuta, Ogun State."
-                ></textarea>
-              </div>
-            </section>
-
-            <!-- DEPARTMENT -->
-
-            <section class="card form-card">
-              <h2 class="form-title">Department</h2>
-
-              <div class="department-select">
-                <div class="form-group">
-                  <label>Department</label>
-
-                  <select id="department">
-                    <option value="">Select department</option>
-
-                    <option>Science Department</option>
-
-                    <option>Mathematics Department</option>
-
-                    <option>Languages Department</option>
-
-                    <option>Arts Department</option>
-
-                    <option>Commercial Department</option>
-
-                    <option>Vocational Department</option>
-                  </select>
-                </div>
-              </div>
-            </section>
-
-            <!-- SUBJECTS -->
-
-            <section class="card form-card">
-              <h2 class="form-title">Subjects & Classes Assigned</h2>
-
-              <p class="section-note">
-                Assign one or more subjects and the classes this teacher will
-                handle.
-              </p>
-
-              <div id="subjectContainer">
-                <div class="assignment-row">
+                <div class="form-grid three-columns">
                   <div class="form-group">
-                    <label>Subject</label>
+                    <label>Surname</label>
 
-                    <select>
-                      <option>Biology</option>
-
-                      <option>Physics</option>
-
-                      <option>Chemistry</option>
-
-                      <option>Mathematics</option>
-                    </select>
+                    <input
+                      type="text"
+                      id="surname"
+                      placeholder="e.g Adebayo"
+                      required
+                    />
                   </div>
 
                   <div class="form-group">
-                    <label>Class</label>
+                    <label>First Name</label>
 
-                    <select>
-                      <option>JSS 3B</option>
-
-                      <option>JSS 2A</option>
-
-                      <option>JSS 1A</option>
-                    </select>
-                  </div>
-
-                  <button type="button" class="remove-row">
-                    <i data-lucide="x"></i>
-                  </button>
-                </div>
-
-                <div class="assignment-row">
-                  <div class="form-group">
-                    <label>Subject</label>
-
-                    <select>
-                      <option>Basic Science & Technology</option>
-
-                      <option>Biology</option>
-                    </select>
+                    <input
+                      type="text"
+                      id="firstname"
+                      placeholder="e.g Folake"
+                      required
+                    />
                   </div>
 
                   <div class="form-group">
-                    <label>Class</label>
+                    <label>Other Names</label>
 
-                    <select>
-                      <option>JSS 3B</option>
-                    </select>
+                    <input type="text" placeholder="e.g Mojisola" />
+                  </div>
+                </div>
+
+                <div class="form-grid two-columns">
+                  <div class="form-group">
+                    <label>Phone Number</label>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      placeholder="e.g +2348023456789"
+                    />
                   </div>
 
-                  <button type="button" class="remove-row">
-                    <i data-lucide="x"></i>
-                  </button>
+                  <div class="form-group">
+                    <label>Email Address</label>
+
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="e.g folake.adebayo@mobayo.edu"
+                    />
+                  </div>
                 </div>
+
+                <div class="form-grid two-columns">
+                  <div class="form-group">
+                    <label>Qualification</label>
+
+                    <input
+                      type="text"
+                      placeholder="e.g B.Sc Biology Education (Hons), NCE"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label>Date Employed</label>
+
+                    <input type="date" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Home Address</label>
+
+                  <textarea
+                    rows="3"
+                    placeholder="e.g 12, Adeola Crescent, Abeokuta, Ogun State."
+                  ></textarea>
+                </div>
+              </section>
+
+              <!-- DEPARTMENT -->
+
+              <section class="card form-card">
+                <h2 class="form-title">Department</h2>
+
+                <div class="department-select">
+                  <div class="form-group">
+                    <label>Department</label>
+
+                    <select id="department">
+                      <option value="">Select department</option>
+
+                      <option>Science Department</option>
+
+                      <option>Mathematics Department</option>
+
+                      <option>Languages Department</option>
+
+                      <option>Arts Department</option>
+
+                      <option>Commercial Department</option>
+
+                      <option>Vocational Department</option>
+                    </select>
+                  </div>
+                </div>
+              </section>
+
+              <!-- SUBJECTS -->
+
+              <section class="card form-card">
+                <h2 class="form-title">Subjects & Classes Assigned</h2>
+
+                <p class="section-note">
+                  Assign one or more subjects and the classes this teacher will
+                  handle.
+                </p>
+
+                <div id="subjectContainer">
+                  <div class="assignment-row">
+                    <div class="form-group">
+                      <label>Subject</label>
+
+                      <select>
+                        <option>Biology</option>
+
+                        <option>Physics</option>
+
+                        <option>Chemistry</option>
+
+                        <option>Mathematics</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Class</label>
+
+                      <select>
+                        <option>JSS 3B</option>
+
+                        <option>JSS 2A</option>
+
+                        <option>JSS 1A</option>
+                      </select>
+                    </div>
+
+                    <button type="button" class="remove-row">
+                      <i data-lucide="x"></i>
+                    </button>
+                  </div>
+
+                  <div class="assignment-row">
+                    <div class="form-group">
+                      <label>Subject</label>
+
+                      <select>
+                        <option>Basic Science & Technology</option>
+
+                        <option>Biology</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Class</label>
+
+                      <select>
+                        <option>JSS 3B</option>
+                      </select>
+                    </div>
+
+                    <button type="button" class="remove-row">
+                      <i data-lucide="x"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <button type="button" id="addSubject" class="add-subject-btn">
+                  <i data-lucide="plus"></i>
+
+                  Add Another Subject / Class
+                </button>
+              </section>
+
+              <!-- LOGIN CREDENTIALS -->
+
+              <section class="credentials-card">
+                <h2>Login Credentials</h2>
+
+                <p>
+                  A staff ID, access code and password will be generated
+                  automatically once the teacher account is created.
+                </p>
+
+                <div class="credentials-grid">
+                  <div>
+                    <small> Staff ID (auto-generated) </small>
+
+                    <strong id="staffIdPreview"> TCH/2026/058 </strong>
+                  </div>
+
+                  <div>
+                    <small> Access Code (auto-generated) </small>
+
+                    <strong id="accessCodePreview"> TC/058/2026 </strong>
+                  </div>
+
+                  <div>
+                    <small> Default Password (auto-generated) </small>
+
+                    <strong id="passwordPreview"> Adebayo@2026 </strong>
+                  </div>
+                </div>
+              </section>
+
+              <!-- ACTIONS -->
+
+              <div class="form-actions">
+                <button type="submit" class="primary-btn">
+                  Create Teacher Account
+                </button>
+
+                <button type="reset" class="secondary-btn">Cancel</button>
               </div>
-
-              <button type="button" id="addSubject" class="add-subject-btn">
-                <i data-lucide="plus"></i>
-
-                Add Another Subject / Class
-              </button>
-            </section>
-
-            <!-- LOGIN CREDENTIALS -->
-
-            <section class="credentials-card">
-              <h2>Login Credentials</h2>
-
-              <p>
-                A staff ID, access code and password will be generated
-                automatically once the teacher account is created.
-              </p>
-
-              <div class="credentials-grid">
-                <div>
-                  <small> Staff ID (auto-generated) </small>
-
-                  <strong id="staffIdPreview"> TCH/2026/058 </strong>
-                </div>
-
-                <div>
-                  <small> Access Code (auto-generated) </small>
-
-                  <strong id="accessCodePreview"> TC/058/2026 </strong>
-                </div>
-
-                <div>
-                  <small> Default Password (auto-generated) </small>
-
-                  <strong id="passwordPreview"> Adebayo@2026 </strong>
-                </div>
-              </div>
-            </section>
-
-            <!-- ACTIONS -->
-
-            <div class="form-actions">
-              <button type="submit" class="primary-btn">
-                Create Teacher Account
-              </button>
-
-              <button type="reset" class="secondary-btn">Cancel</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </main>
     </div>

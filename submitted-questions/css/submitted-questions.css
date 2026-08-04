@@ -19,7 +19,7 @@
 }
 
 .page-title h1 {
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #2e7d32;
   margin-bottom: 6px;
@@ -102,7 +102,7 @@
 
   padding-left: 50px;
 
-  font-size: 1rem;
+  font-size: 0.938rem;
 
   outline: none;
 }
@@ -144,7 +144,7 @@
 }
 
 .filter-card h3 {
-  font-size: 1rem;
+  font-size: 0.938rem;
 
   color: #2e7d32;
 
@@ -220,7 +220,7 @@
 }
 
 .year-title {
-  font-size: 1.7rem;
+  font-size: 1.125rem;
 
   font-weight: 700;
 }
@@ -272,7 +272,7 @@
 
   color: #2e7d32;
 
-  font-size: 1.1rem;
+  font-size: 0.938rem;
 }
 
 .class-header .submission-count {
@@ -312,7 +312,7 @@ thead th {
 
   color: #666;
 
-  font-size: 0.92rem;
+  font-size: 0.75rem;
 
   font-weight: 600;
 }
@@ -447,4 +447,11 @@ tbody td {
   .apply-filter-btn {
     width: 100%;
   }
+}
+
+/* container */
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 32px 40px;
 }

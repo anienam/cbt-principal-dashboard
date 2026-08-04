@@ -169,107 +169,109 @@ TOPBAR
           </div>
         </header>
 
-        <!-- ==========================================
+        <div class="main-container">
+          <!-- ==========================================
 BACK BUTTON
 ========================================== -->
 
-        <a href="../exam-control/exam-control.html" class="back-btn">
-          <i data-lucide="arrow-left"></i>
+          <a href="../exam-control/exam-control.html" class="back-btn">
+            <i data-lucide="arrow-left"></i>
 
-          Back to Exam Control
-        </a>
+            Back to Exam Control
+          </a>
 
-        <!-- ==========================================
+          <!-- ==========================================
 FORM
 ========================================== -->
 
-        <section class="schedule-card">
-          <h2>Select Exam to Schedule</h2>
+          <section class="schedule-card">
+            <h2>Select Exam to Schedule</h2>
 
-          <p class="subtitle">
-            Only subjects with fully approved questions appear here. Each one is
-            shown once.
-          </p>
+            <p class="subtitle">
+              Only subjects with fully approved questions appear here. Each one
+              is shown once.
+            </p>
 
-          <div class="form-group">
-            <label>Subject</label>
-
-            <select id="subject">
-              <option>Select an approved subject...</option>
-            </select>
-          </div>
-
-          <div class="form-grid">
             <div class="form-group">
-              <label>Class</label>
+              <label>Subject</label>
 
-              <select id="class">
-                <option>Select class...</option>
+              <select id="subject">
+                <option>Select an approved subject...</option>
               </select>
             </div>
 
-            <div class="form-group">
-              <label>Duration</label>
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Class</label>
 
-              <select id="duration">
-                <option>Select duration...</option>
-              </select>
-            </div>
-          </div>
+                <select id="class">
+                  <option>Select class...</option>
+                </select>
+              </div>
 
-          <div class="questions-card">
-            <div>
-              <small>Questions</small>
+              <div class="form-group">
+                <label>Duration</label>
 
-              <h3 id="questionCount">45</h3>
-            </div>
-
-            <span class="pill"> Auto-filled </span>
-          </div>
-
-          <h2 class="quick-title">Quick Schedule</h2>
-
-          <div class="quick-buttons">
-            <button class="active">In 1 Hour</button>
-
-            <button>In 3 Hours</button>
-
-            <button>In 6 Hours</button>
-
-            <button>Tomorrow, 8:00 AM</button>
-          </div>
-
-          <h2 class="custom-title">Or Choose a Custom Date & Time</h2>
-
-          <div class="form-grid">
-            <div class="form-group">
-              <label>Date</label>
-
-              <input type="date" id="examDate" />
+                <select id="duration">
+                  <option>Select duration...</option>
+                </select>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label>Time</label>
+            <div class="questions-card">
+              <div>
+                <small>Questions</small>
 
-              <input type="time" id="examTime" />
+                <h3 id="questionCount">45</h3>
+              </div>
+
+              <span class="pill"> Auto-filled </span>
             </div>
-          </div>
 
-          <div class="info-box">
-            The exam will automatically go live at the selected time and stop
-            itself once the selected duration ends.
-          </div>
+            <h2 class="quick-title">Quick Schedule</h2>
 
-          <div class="action-buttons">
-            <button class="primary-btn" id="confirmSchedule">
-              <i data-lucide="clock-3"></i>
+            <div class="quick-buttons">
+              <button class="active">In 1 Hour</button>
 
-              Confirm Schedule
-            </button>
+              <button>In 3 Hours</button>
 
-            <button class="secondary-btn">Cancel</button>
-          </div>
-        </section>
+              <button>In 6 Hours</button>
+
+              <button>Tomorrow, 8:00 AM</button>
+            </div>
+
+            <h2 class="custom-title">Or Choose a Custom Date & Time</h2>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Date</label>
+
+                <input type="date" id="examDate" />
+              </div>
+
+              <div class="form-group">
+                <label>Time</label>
+
+                <input type="time" id="examTime" />
+              </div>
+            </div>
+
+            <div class="info-box">
+              The exam will automatically go live at the selected time and stop
+              itself once the selected duration ends.
+            </div>
+
+            <div class="action-buttons">
+              <button class="primary-btn" id="confirmSchedule">
+                <i data-lucide="clock-3"></i>
+
+                Confirm Schedule
+              </button>
+
+              <button class="secondary-btn">Cancel</button>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 

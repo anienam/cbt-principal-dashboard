@@ -166,65 +166,67 @@ TOPBAR
           </div>
         </header>
 
-        <!-- ==========================================
+        <div class="main-container">
+          <!-- ==========================================
 BACK BUTTON
 ========================================== -->
 
-        <div class="back-row">
-          <a href="../broadcasts/broadcasts.html" class="back-btn">
-            <i data-lucide="arrow-left"></i>
-          </a>
+          <div class="back-row">
+            <a href="../broadcasts/broadcasts.html" class="back-btn">
+              <i data-lucide="arrow-left"></i>
+            </a>
 
-          <span>Back to Broadcasts</span>
-        </div>
+            <span>Back to Broadcasts</span>
+          </div>
 
-        <!-- ==========================================
+          <!-- ==========================================
 FORM
 ========================================== -->
 
-        <form id="broadcastForm">
-          <section class="audience-section">
-            <h2>Audience</h2>
+          <form id="broadcastForm">
+            <section class="audience-section">
+              <h2>Audience</h2>
 
-            <div class="audience-grid" id="audienceGrid"></div>
-          </section>
+              <div class="audience-grid" id="audienceGrid"></div>
+            </section>
 
-          <section class="message-section">
-            <h2>Message</h2>
+            <section class="message-section">
+              <h2>Message</h2>
 
-            <div class="form-group">
-              <label>Title</label>
+              <div class="form-group">
+                <label>Title</label>
 
-              <input
-                type="text"
-                id="broadcastTitle"
-                placeholder="e.g Mid-Term Break Resumption"
-              />
-            </div>
+                <input
+                  type="text"
+                  id="broadcastTitle"
+                  placeholder="e.g Mid-Term Break Resumption"
+                />
+              </div>
 
-            <div class="form-group">
-              <label>Message</label>
+              <div class="form-group">
+                <label>Message</label>
 
-              <textarea
-                id="broadcastMessage"
-                rows="6"
-                placeholder="Type your announcement here..."
-              ></textarea>
-            </div>
+                <textarea
+                  id="broadcastMessage"
+                  rows="6"
+                  placeholder="Type your announcement here..."
+                ></textarea>
+              </div>
 
-            <div class="delivery-note" id="deliveryNote"></div>
+              <div class="delivery-note" id="deliveryNote"></div>
 
-            <div class="form-actions">
-              <button type="submit" class="send-btn">
-                <i data-lucide="send"></i>
+              <div class="form-actions">
+                <button type="submit" class="send-btn">
+                  <i data-lucide="send"></i>
 
-                Send Broadcast
-              </button>
+                  Send Broadcast
+                </button>
 
-              <button type="button" class="cancel-btn">Cancel</button>
-            </div>
-          </section>
-        </form>
+                <button type="button" class="cancel-btn">Cancel</button>
+              </div>
+            </section>
+          </form>
+        </div>
       </main>
     </div>
 

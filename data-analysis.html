@@ -169,85 +169,89 @@ TOPBAR
           </div>
         </header>
 
-        <!-- ==========================================
+        <div class="main-container">
+          <!-- Main content for Data Analysis -->
+
+          <!-- ==========================================
 SUMMARY
 ========================================== -->
 
-        <section class="stats-grid" id="statsGrid"></section>
+          <section class="stats-grid" id="statsGrid"></section>
 
-        <!-- ==========================================
+          <!-- ==========================================
 AVERAGE SCORE
 ========================================== -->
 
-        <section class="chart-card">
-          <h2 class="section-title">Average Score by Class (%)</h2>
+          <section class="chart-card">
+            <h2 class="section-title">Average Score by Class (%)</h2>
 
-          <div class="bar-chart" id="classChart"></div>
-        </section>
+            <div class="bar-chart" id="classChart"></div>
+          </section>
 
-        <!-- ==========================================
+          <!-- ==========================================
 PERFORMANCE
 ========================================== -->
 
-        <section>
-          <h2 class="section-title">Performance by Subject</h2>
+          <section>
+            <h2 class="section-title">Performance by Subject</h2>
 
-          <div class="filters">
-            <select id="classFilter">
-              <option>JSS 3B</option>
-            </select>
+            <div class="filters">
+              <select id="classFilter">
+                <option>JSS 3B</option>
+              </select>
 
-            <select id="sessionFilter">
-              <option>Session 2026/2027</option>
-            </select>
+              <select id="sessionFilter">
+                <option>Session 2026/2027</option>
+              </select>
 
-            <div class="term-tabs">
-              <button>1st Term</button>
+              <div class="term-tabs">
+                <button>1st Term</button>
 
-              <button class="active">2nd Term</button>
+                <button class="active">2nd Term</button>
 
-              <button>3rd Term</button>
+                <button>3rd Term</button>
+              </div>
             </div>
-          </div>
 
-          <div class="class-banner">
-            Class: <strong>JSS 3B</strong>
+            <div class="class-banner">
+              Class: <strong>JSS 3B</strong>
 
-            | Class Teacher:
+              | Class Teacher:
 
-            <strong>Mr. Obi Chidubem</strong>
+              <strong>Mr. Obi Chidubem</strong>
 
-            |
+              |
 
-            <strong>35 Students</strong>
+              <strong>35 Students</strong>
 
-            |
+              |
 
-            <strong>2nd Term</strong>
-          </div>
+              <strong>2nd Term</strong>
+            </div>
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Subject</th>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Subject</th>
 
-                  <th>Avg Score</th>
+                    <th>Avg Score</th>
 
-                  <th>Pass Rate</th>
+                    <th>Pass Rate</th>
 
-                  <th>Highest</th>
+                    <th>Highest</th>
 
-                  <th>Lowest</th>
+                    <th>Lowest</th>
 
-                  <th>Trend</th>
-                </tr>
-              </thead>
+                    <th>Trend</th>
+                  </tr>
+                </thead>
 
-              <tbody id="performanceTable"></tbody>
-            </table>
-          </div>
-        </section>
+                <tbody id="performanceTable"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
 

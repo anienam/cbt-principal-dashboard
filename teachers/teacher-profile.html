@@ -21,8 +21,8 @@
 
     <link rel="stylesheet" href="../css/styles.css" />
 
-    <link rel="stylesheet" href="../css/forms.css" />
-    <link rel="stylesheet" href="../css/buttons.css" />
+    <!-- <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/buttons.css" /> -->
 
     <link rel="stylesheet" href="./css/teacher-profile.css" />
   </head>
@@ -167,194 +167,202 @@
             </div>
           </div>
 
-          <!-- Back Button -->
-          <div class="profile-navigation">
-            <button class="back-btn" id="backButton">
-              <i data-lucide="arrow-left"></i>
-              <span>Back to Teachers</span>
-            </button>
-          </div>
-
-          <!-- Profile Card -->
-          <section class="card teacher-profile-card">
-            <div class="teacher-photo">
-              <img
-                src="../assets/images/teachers/teacher-1.jpg"
-                alt="Adebayo Folake Mojisola"
-              />
+          <div class="main-container">
+            <!-- Back Button -->
+            <div class="profile-navigation">
+              <button class="back-btn" id="backButton">
+                <i data-lucide="arrow-left"></i>
+                <span>Back to Teachers</span>
+              </button>
             </div>
 
-            <div class="teacher-details">
-              <div class="teacher-row">
-                <span class="label">Full Name:</span>
+            <!-- Profile Card -->
+            <section class="card teacher-profile-card">
+              <div class="teacher-photo">
+                <img
+                  src="../assets/teacher.png"
+                  alt="Adebayo Folake Mojisola"
+                />
+              </div>
 
-                <div class="value-group">
-                  <span class="value"> Adebayo Folake Mojisola </span>
+              <div class="teacher-details">
+                <div class="teacher-row">
+                  <span class="label">Full Name:</span>
 
-                  <span class="status-badge active">
-                    <span class="dot"></span>
-                    Active
+                  <div class="value-group">
+                    <span class="value"> Adebayo Folake Mojisola </span>
+
+                    <span class="status-badge active">
+                      <span class="dot"></span>
+                      Active
+                    </span>
+                  </div>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Staff ID:</span>
+                  <span class="value">TCH/2025/014</span>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Department:</span>
+                  <span class="value">Science Department</span>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Subjects Taught:</span>
+                  <span class="value">
+                    Biology, Basic Science & Technology
                   </span>
                 </div>
+
+                <div class="teacher-row">
+                  <span class="label">Phone Number:</span>
+                  <span class="value">+2348023456789</span>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Qualification:</span>
+                  <span class="value">
+                    B.Sc Biology Education (Hons), NCE
+                  </span>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Address:</span>
+                  <span class="value">
+                    12, Adeola Crescent, Abeokuta, Ogun State.
+                  </span>
+                </div>
+
+                <div class="teacher-row">
+                  <span class="label">Date Employed:</span>
+                  <span class="value">September 2022</span>
+                </div>
+              </div>
+            </section>
+
+            <!-- Performance Summary -->
+
+            <section class="performance-section">
+              <h2 class="section-title">Performance Summary</h2>
+
+              <div class="stats-grid">
+                <div class="card stat-card">
+                  <h3>191</h3>
+                  <p>Total Students</p>
+                </div>
+
+                <div class="card stat-card">
+                  <h3>6</h3>
+                  <p>Classes Assigned</p>
+                </div>
+
+                <div class="card stat-card">
+                  <h3>8</h3>
+                  <p>Exams Submitted</p>
+                </div>
+
+                <div class="card stat-card warning">
+                  <h3>1</h3>
+                  <p>Pending Approval</p>
+                </div>
+
+                <div class="card stat-card">
+                  <h3>76%</h3>
+                  <p>Avg. Student Score</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Classes -->
+
+            <section class="table-section">
+              <div class="section-header">
+                <h2>Classes & Subjects Assigned</h2>
               </div>
 
-              <div class="teacher-row">
-                <span class="label">Staff ID:</span>
-                <span class="value">TCH/2025/014</span>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Class</th>
+                      <th>Subject</th>
+                      <th>No. of Students</th>
+                      <th>Term</th>
+                      <th>Session</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>JSS 1A</td>
+                      <td>Biology</td>
+                      <td>30</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+
+                    <tr>
+                      <td>JSS 1B</td>
+                      <td>Biology</td>
+                      <td>28</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+
+                    <tr>
+                      <td>JSS 2A</td>
+                      <td>Biology</td>
+                      <td>33</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+
+                    <tr>
+                      <td>JSS 2B</td>
+                      <td>Biology</td>
+                      <td>31</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+
+                    <tr>
+                      <td>JSS 3A</td>
+                      <td>Biology</td>
+                      <td>34</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+
+                    <tr>
+                      <td>JSS 3B</td>
+                      <td>Biology, Basic Science & Tech</td>
+                      <td>35</td>
+                      <td>2nd Term</td>
+                      <td>2025/2026</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+            </section>
 
-              <div class="teacher-row">
-                <span class="label">Department:</span>
-                <span class="value">Science Department</span>
+            <!-- Account Management -->
+
+            <section class="account-management">
+              <h2 class="section-title">Account Management</h2>
+
+              <div class="action-buttons">
+                <button class="btn btn-outline-success">
+                  Reset Access Code
+                </button>
+
+                <button class="btn btn-outline-success">Change Password</button>
+
+                <button class="btn btn-outline-danger">Pause Account</button>
               </div>
-
-              <div class="teacher-row">
-                <span class="label">Subjects Taught:</span>
-                <span class="value"> Biology, Basic Science & Technology </span>
-              </div>
-
-              <div class="teacher-row">
-                <span class="label">Phone Number:</span>
-                <span class="value">+2348023456789</span>
-              </div>
-
-              <div class="teacher-row">
-                <span class="label">Qualification:</span>
-                <span class="value"> B.Sc Biology Education (Hons), NCE </span>
-              </div>
-
-              <div class="teacher-row">
-                <span class="label">Address:</span>
-                <span class="value">
-                  12, Adeola Crescent, Abeokuta, Ogun State.
-                </span>
-              </div>
-
-              <div class="teacher-row">
-                <span class="label">Date Employed:</span>
-                <span class="value">September 2022</span>
-              </div>
-            </div>
-          </section>
-
-          <!-- Performance Summary -->
-
-          <section class="performance-section">
-            <h2 class="section-title">Performance Summary</h2>
-
-            <div class="stats-grid">
-              <div class="card stat-card">
-                <h3>191</h3>
-                <p>Total Students</p>
-              </div>
-
-              <div class="card stat-card">
-                <h3>6</h3>
-                <p>Classes Assigned</p>
-              </div>
-
-              <div class="card stat-card">
-                <h3>8</h3>
-                <p>Exams Submitted</p>
-              </div>
-
-              <div class="card stat-card warning">
-                <h3>1</h3>
-                <p>Pending Approval</p>
-              </div>
-
-              <div class="card stat-card">
-                <h3>76%</h3>
-                <p>Avg. Student Score</p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Classes -->
-
-          <section class="table-section">
-            <div class="section-header">
-              <h2>Classes & Subjects Assigned</h2>
-            </div>
-
-            <div class="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Class</th>
-                    <th>Subject</th>
-                    <th>No. of Students</th>
-                    <th>Term</th>
-                    <th>Session</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>JSS 1A</td>
-                    <td>Biology</td>
-                    <td>30</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-
-                  <tr>
-                    <td>JSS 1B</td>
-                    <td>Biology</td>
-                    <td>28</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-
-                  <tr>
-                    <td>JSS 2A</td>
-                    <td>Biology</td>
-                    <td>33</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-
-                  <tr>
-                    <td>JSS 2B</td>
-                    <td>Biology</td>
-                    <td>31</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-
-                  <tr>
-                    <td>JSS 3A</td>
-                    <td>Biology</td>
-                    <td>34</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-
-                  <tr>
-                    <td>JSS 3B</td>
-                    <td>Biology, Basic Science & Tech</td>
-                    <td>35</td>
-                    <td>2nd Term</td>
-                    <td>2025/2026</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          <!-- Account Management -->
-
-          <section class="account-management">
-            <h2 class="section-title">Account Management</h2>
-
-            <div class="action-buttons">
-              <button class="btn btn-outline-success">Reset Access Code</button>
-
-              <button class="btn btn-outline-success">Change Password</button>
-
-              <button class="btn btn-outline-danger">Pause Account</button>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </main>
     </div>

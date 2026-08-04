@@ -166,194 +166,196 @@
           </div>
         </header>
 
-        <!-- ==========================================
+        <div class="main-container">
+          <!-- ==========================================
     BACK BUTTON
     ========================================== -->
 
-        <div class="back-wrapper">
-          <a href="./departments.html" class="back-btn">
-            <i data-lucide="arrow-left"></i>
-          </a>
+          <div class="back-wrapper">
+            <a href="./departments.html" class="back-btn">
+              <i data-lucide="arrow-left"></i>
+            </a>
 
-          <span>Back to Departments</span>
-        </div>
+            <span>Back to Departments</span>
+          </div>
 
-        <!-- ==========================================
+          <!-- ==========================================
     FORM
     ========================================== -->
 
-        <form class="department-form">
-          <h2 class="section-title">Department Details</h2>
+          <form class="department-form">
+            <h2 class="section-title">Department Details</h2>
 
-          <div class="form-grid">
-            <div class="form-group">
-              <label> Department Name </label>
+            <div class="form-grid">
+              <div class="form-group">
+                <label> Department Name </label>
 
-              <input type="text" placeholder="e.g Vocational & Technical" />
-            </div>
+                <input type="text" placeholder="e.g Vocational & Technical" />
+              </div>
 
-            <div class="form-group">
-              <label> Head of Department </label>
+              <div class="form-group">
+                <label> Head of Department </label>
 
-              <div class="select-wrapper">
-                <select>
-                  <option selected disabled>Select a teacher</option>
+                <div class="select-wrapper">
+                  <select>
+                    <option selected disabled>Select a teacher</option>
 
-                  <option>Mr. Bamidele Ayo</option>
+                    <option>Mr. Bamidele Ayo</option>
 
-                  <option>Mrs. Nwankwo Chika</option>
+                    <option>Mrs. Nwankwo Chika</option>
 
-                  <option>Dr. Chukwu Emeka</option>
-                </select>
+                    <option>Dr. Chukwu Emeka</option>
+                  </select>
 
-                <i data-lucide="chevron-down"></i>
+                  <i data-lucide="chevron-down"></i>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="form-group">
-            <label>
-              Description
-              <span>(Optional)</span>
-            </label>
+            <div class="form-group">
+              <label>
+                Description
+                <span>(Optional)</span>
+              </label>
 
-            <textarea
-              rows="3"
-              placeholder="e.g Covers technical drawing, woodwork, and computer studies."
-            ></textarea>
-          </div>
+              <textarea
+                rows="3"
+                placeholder="e.g Covers technical drawing, woodwork, and computer studies."
+              ></textarea>
+            </div>
 
-          <!-- ==========================================
+            <!-- ==========================================
         TEACHERS
         ========================================== -->
 
-          <h2 class="section-title">Add Teachers to Department</h2>
+            <h2 class="section-title">Add Teachers to Department</h2>
 
-          <div class="search-box">
-            <i data-lucide="search"></i>
+            <div class="search-box">
+              <i data-lucide="search"></i>
 
-            <input
-              type="text"
-              placeholder="Search teachers by name or subject..."
-            />
-          </div>
-
-          <div class="selected-wrapper">
-            <p>Selected (2)</p>
-
-            <div class="selected-list">
-              <span class="teacher-chip">
-                Mr. Bamidele Ayo
-
-                <button type="button">
-                  <i data-lucide="x"></i>
-                </button>
-              </span>
-
-              <span class="teacher-chip">
-                Mrs. Nwankwo Chika
-
-                <button type="button">
-                  <i data-lucide="x"></i>
-                </button>
-              </span>
+              <input
+                type="text"
+                placeholder="Search teachers by name or subject..."
+              />
             </div>
-          </div>
 
-          <!-- ==========================================
+            <div class="selected-wrapper">
+              <p>Selected (2)</p>
+
+              <div class="selected-list">
+                <span class="teacher-chip">
+                  Mr. Bamidele Ayo
+
+                  <button type="button">
+                    <i data-lucide="x"></i>
+                  </button>
+                </span>
+
+                <span class="teacher-chip">
+                  Mrs. Nwankwo Chika
+
+                  <button type="button">
+                    <i data-lucide="x"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+
+            <!-- ==========================================
         TABLE
         ========================================== -->
 
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th></th>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
 
-                  <th>Teacher Name</th>
+                    <th>Teacher Name</th>
 
-                  <th>Current Department</th>
+                    <th>Current Department</th>
 
-                  <th>Subjects</th>
+                    <th>Subjects</th>
 
-                  <th>Status</th>
-                </tr>
-              </thead>
+                    <th>Status</th>
+                  </tr>
+                </thead>
 
-              <tbody>
-                <tr>
-                  <td>
-                    <input checked type="checkbox" />
-                  </td>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input checked type="checkbox" />
+                    </td>
 
-                  <td>Mr. Bamidele Ayo</td>
+                    <td>Mr. Bamidele Ayo</td>
 
-                  <td>Unassigned</td>
+                    <td>Unassigned</td>
 
-                  <td>Computer Studies</td>
+                    <td>Computer Studies</td>
 
-                  <td class="status-success">Will be added</td>
-                </tr>
+                    <td class="status-success">Will be added</td>
+                  </tr>
 
-                <tr>
-                  <td>
-                    <input checked type="checkbox" />
-                  </td>
+                  <tr>
+                    <td>
+                      <input checked type="checkbox" />
+                    </td>
 
-                  <td>Mrs. Nwankwo Chika</td>
+                    <td>Mrs. Nwankwo Chika</td>
 
-                  <td>Unassigned</td>
+                    <td>Unassigned</td>
 
-                  <td>Civic Education</td>
+                    <td>Civic Education</td>
 
-                  <td class="status-success">Will be added</td>
-                </tr>
+                    <td class="status-success">Will be added</td>
+                  </tr>
 
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
 
-                  <td>Mr. Okoro Victor</td>
+                    <td>Mr. Okoro Victor</td>
 
-                  <td>Physical Education Dept.</td>
+                    <td>Physical Education Dept.</td>
 
-                  <td>Physical Education</td>
+                    <td>Physical Education</td>
 
-                  <td>-</td>
-                </tr>
+                    <td>-</td>
+                  </tr>
 
-                <tr>
-                  <td>
-                    <input type="checkbox" />
-                  </td>
+                  <tr>
+                    <td>
+                      <input type="checkbox" />
+                    </td>
 
-                  <td>Mrs. Eze Chinyere</td>
+                    <td>Mrs. Eze Chinyere</td>
 
-                  <td>Unassigned</td>
+                    <td>Unassigned</td>
 
-                  <td>Home Economics</td>
+                    <td>Home Economics</td>
 
-                  <td>-</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+                    <td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-          <!-- ==========================================
+            <!-- ==========================================
         ACTION BUTTONS
         ========================================== -->
 
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">
-              <i data-lucide="check"></i>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                <i data-lucide="check"></i>
 
-              Save Department
-            </button>
+                Save Department
+              </button>
 
-            <button type="button" class="btn btn-secondary">Cancel</button>
-          </div>
-        </form>
+              <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+          </form>
+        </div>
       </main>
     </div>
 

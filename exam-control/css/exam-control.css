@@ -35,7 +35,7 @@ ACCORDION
 }
 
 .exam-header h2 {
-  font-size: 1.7rem;
+  font-size: 1.125rem;
 
   font-weight: 700;
 }
@@ -89,7 +89,7 @@ EXAM CARD
 }
 
 .exam-title h3 {
-  font-size: 1.45rem;
+  font-size: 1.063rem;
 
   font-weight: 700;
 }
@@ -404,4 +404,11 @@ STOP MODAL
   align-items: center;
 
   gap: 0.7rem;
+}
+
+/* container */
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px 32px 40px;
 }

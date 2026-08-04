@@ -71,7 +71,7 @@
 ========================================== */
 
 .stat-card h2 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 8px;
   color: var(--text-dark);
@@ -83,7 +83,7 @@
 
 .stat-card p {
   color: var(--text-light);
-  font-size: 15px;
+  font-size: 0.813rem;
   line-height: 1.5;
 }
 
